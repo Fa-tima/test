@@ -1,0 +1,411 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    header {
+        background-position: center center;
+        background-size: 100% 100%;
+        height: 100vh;
+        background-image: url(../img/slideshow-1.jpg);
+    }
+    
+    @keyframes fadeInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+    .arrow-buttom {
+        top: 65px;
+    }
+    
+    .arrow-top {
+        top: -64px;
+    }
+    
+    .arrow-top span {
+        border: 2px solid;
+        padding: 20px;
+    }
+    
+    .arrow-buttom span {
+        border: 2px solid;
+        border-top: 0px;
+        padding: 20px;
+    }
+    
+    #home .carousel-control-prev {
+        width: 2%;
+    }
+    
+    .carousel-item {
+        height: 100vh;
+        min-height: 300px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+    .carousel-caption {
+        bottom: 220px;
+    }
+    
+    .carousel-caption h2 {
+        font-size: 80px;
+        letter-spacing: 2px;
+        font-family: poppins;
+    }
+    /* start nav*/
+    
+    .navbar-dark .navbar-nav .active>.nav-link {
+        color: red;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link {
+        color: white;
+    }
+    
+    .sticky {
+        background-color: black;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        color: black;
+    }
+    /* start about*/
+    
+    #about h2 {
+        font-size: 80px;
+        color: #f1f1f1;
+        font-weight: bold;
+    }
+    
+    #about h3 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    .bord {
+        width: 5%;
+        height: 1px;
+        background-color: black;
+    }
+    
+    .tcolors {
+        font-size: 18px;
+        color: #999;
+        margin-bottom: 70p
+    }
+    
+    #about .tcolor {
+        font-size: 14px;
+        line-height: 1.75em;
+        color: #666;
+    }
+    
+    .prog1 {
+        display: flex;
+        width: 80%;
+    }
+    
+    .prog2 {
+        display: flex;
+        width: 95%;
+    }
+    
+    .progres div p {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-top: 20px;
+    }
+    
+    .prog3 {
+        display: flex;
+        width: 85%;
+    }
+    
+    .prog4 {
+        display: flex;
+        width: 70%;
+    }
+    
+    .progress {
+        height: 4px;
+        margin-top: px;
+    }
+    /* end about*/
+    /* start team*/
+    
+    #team h2 {
+        font-size: 80px;
+        color: #f1f1f1;
+        font-weight: bold;
+    }
+    
+    #team h3 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    #team .item {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #team .caption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(242, 84, 84, 0.85);
+        color: white;
+        transition: all 0.5s;
+    }
+    
+    #team .caption:hover {
+        opacity: 1;
+    }
+    
+    #team .caption:hover .oo {
+        color: #f25454;
+    }
+    
+    .item:hover img {
+        transform: scale(1.1);
+    }
+    
+    .item img {
+        transition: transform .5s;
+    }
+    
+    .fab {
+        margin: 10px;
+    }
+    
+    .text {
+        font-size: 15px;
+    }
+    
+    .c1 {
+        line-height: 50px;
+        font-weight: 400;
+        font-size: 32px;
+    }
+    
+    .c2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .bot {
+        text-align: center;
+        width: 150px;
+        background-color: #f25454;
+        border-radius: 3px;
+        padding: 18px 30px;
+        line-height: 1;
+        font-weight: 700;
+    }
+    
+    .bot a {
+        color: white;
+        text-decoration: none;
+    }
+    /* end team*/
+    /* start Services*/
+    
+    #services h2 {
+        font-size: 80px;
+        color: #f1f1f1;
+        font-weight: bold;
+    }
+    
+    #services h3 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    .items p {
+        margin-left: 45px;
+        padding-top: 20px;
+        font-size: 14px;
+    }
+    
+    .icon {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .icon i {
+        margin-right: 25px;
+        color: red;
+    }
+    /* end Services*/
+    /* start blog*/
+    
+    #blog h2 {
+        font-size: 100px;
+        color: #f1f1f1;
+        font-weight: bold;
+    }
+    
+    #blog h3 {
+        font-size: 40px;
+        font-weight: bold;
+        padding-top: 50px;
+    }
+    
+    .slider {
+        border-radius: 50%;
+        width: 50%;
+        margin: 100px auto;
+    }
+    
+    .slick-slide {
+        margin: 0px 20px;
+    }
+    
+    .nn {
+        width: 600px;
+    }
+    
+    .slick-slide img {
+        width: 100%;
+        border-radius: 50%;
+    }
+    
+    .slick-slide img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+    }
+    
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+    
+    .slick-slide {
+        transition: all ease-in-out .3s;
+        opacity: .2;
+    }
+    
+    .slick-active {
+        opacity: .5;
+    }
+    
+    .slick-current {
+        opacity: 1;
+    }
+    /* end blog*/
+    /* start contact*/
+    
+    #contact h2 {
+        font-size: 80px;
+        color: #f1f1f1;
+        font-weight: bold;
+    }
+    
+    #contact h3 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    .fa-ul i {
+        font-size: 40px;
+        color: red;
+    }
+    
+    .c4 {
+        margin-left: 30px;
+    }
+    
+    #contact h6 {
+        font-size: 20px
+    }
+    
+    .c4 p {
+        font-size: 14px;
+        line-height: 1.75em;
+        color: #666
+    }
+    
+    .bordr {
+        width: 100%;
+        height: 0.1px;
+        background-color: rgb(204, 198, 198);
+    }
+    /* end content*/
+    /* start footer*/
+    
+    footer {
+        background-image: url(../img/dotted-map.png);
+        position: relative;
+        color: white;
+    }
+    
+    .c7 {
+        background-color: rgb(12, 11, 11);
+        position: absolute;
+    }
+    
+    .c6 a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .c6 a:hover {
+        color: red;
+    }
+    
+    .aa {
+        width: 130px;
+    }
+    
+    .bb {
+        width: 90px;
+    }
+    
+    .C6 a:hover {
+        border: red;
+        color: red;
+    }
+    
+    .ico {
+        display: flex;
+    }
+    
+    .ico i {
+        padding-right: 30px;
+    }
+    
+    .b1 a {
+        margin: 25px;
+        background: red;
+        color: white;
+        border-radius: 4px;
+        padding: 10px;
+        border: 5px;
+        text-decoration: none;
+    }
+    
+    .b2 {
+        padding: 15px;
+    }
+    
+    .b1 a:hover {
+        background: rgb(231, 107, 107);
+    }
